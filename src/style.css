@@ -1,12 +1,23 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-
 body {
   background: grey;
 }
 
 .card {
-  display: inline-block;
   margin: auto;
-  height: 400px;
+  height: 420px;
   width: 320px;
+}
+
+.top-figura {
+  font-size: 65px;
+}
+
+.number {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+.bottom-figura {
+  transform: rotate(180deg);
+  font-size: 65px;
 }

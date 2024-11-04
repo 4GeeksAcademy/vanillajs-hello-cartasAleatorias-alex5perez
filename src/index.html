@@ -10,16 +10,68 @@
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+
+    <!-- CSS de Bootstrap 5.0 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Generador de Cartas Aleatorias</h1>
-      <div class="card">
-        <span class="top-suit"></span>
-        <span class="number">7</span>
-        <span class="bottom-suit"></span>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center">
+          <h1 class="mt-5">Generador de Cartas Aleatorias</h1>
+          <div
+            id="card"
+            class="card d-flex flex-column align-items-center justify-content-center mt-5"
+          >
+            <span
+              id="top-card"
+              class="figuras top-figura position-absolute top-0 start-0 ms-3"
+              >♣</span
+            >
+            <span id="number" class="number">4</span>
+            <span
+              id="bottom-card"
+              class="figuras bottom-figura position-absolute bottom-0 end-0 me-3"
+              >♣</span
+            >
+          </div>
+          <div>
+            <button
+              type="button"
+              class="btn btn-light mt-5"
+              onclick="window.location.reload();"
+            >
+              Nueva Carta
+            </button>
+          </div>
+          <div class="mt-5">
+            <label for="alto">Altura:</label>
+            <input id="alto" type="number" />
+            <label for="ancho">Anchura:</label>
+            <input id="ancho" type="number" />
+            <button onclick="sizeCard();">Aplicar tamaño</button>
+          </div>
+        </div>
       </div>
     </div>
+
+    <div id="widget_content"></div>
+
+    <!-- JavaScript de Bootstrap 5.0 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
   </body>
 </html>

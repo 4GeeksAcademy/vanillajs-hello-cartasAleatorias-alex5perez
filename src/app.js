@@ -37,6 +37,15 @@ window.onload = function() {
   }
 };
 
+function sizeCard() {
+  const altura = document.getElementById("alto").value;
+  const anchura = document.getElementById("ancho").value;
+  const carta = document.getElementById("card");
+
+  carta.style.height = altura + "px";
+  carta.style.width = anchura + "px";
+}
+
 setTimeout(function() {
   window.location.reload();
 }, 10000);
