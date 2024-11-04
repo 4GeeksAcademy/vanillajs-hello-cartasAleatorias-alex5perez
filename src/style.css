@@ -1,1 +1,12 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: grey;
+}
+
+.card {
+  display: inline-block;
+  margin: auto;
+  height: 400px;
+  width: 320px;
+}
